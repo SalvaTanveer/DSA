@@ -18,10 +18,10 @@ public class FirstAndLastPosition {
             int mid = start + (end - start) / 2;
             if (arr[mid] == target) {
                 ans = mid;
-                if (left) {
+                if (left) { // look on the left
                     end = mid - 1;
                 } else {
-                    start = mid + 1;
+                    start = mid + 1; // look on the right
                 }
             } else if (arr[mid] < target) {
                 start = mid + 1;
